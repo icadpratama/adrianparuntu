@@ -208,5 +208,14 @@
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 
+		<script>
+			document.getElementById('shareBtn').onclick = function () {
+				FB.ui({
+					display: 'popup',
+					method: 'send',
+					href: 'https://adrianparuntu.id/',
+				}, function (response) { });
+			}
+		</script>
 	</body>
 </html>
