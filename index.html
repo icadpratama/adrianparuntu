@@ -42,7 +42,8 @@
 				function gtag() { dataLayer.push(arguments); }
 				gtag('js', new Date());
 
-				gtag('config', 'UA-159410100-1');			</script>
+				gtag('config', 'UA-159410100-1');
+		</script>
 
 <!-- Matomo -->
 <script type="text/javascript">
@@ -189,6 +190,30 @@
 				</div>
 			</footer>
 
+		</div>
+
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function () {
+				FB.init({
+					xfbml: true,
+					version: 'v6.0'
+				});
+			};
+
+			(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/id_ID/sdk/xfbml.customerchat.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your customer chat code -->
+		<div class="fb-customerchat" attribution=setup_tool page_id="100543958257808" theme_color="#ffc300"
+			logged_in_greeting="Hi! Selamat datang di website Adrian. Silakan chat jika ada yang dapat dibantu."
+			logged_out_greeting="Hi! Selamat datang di website Adrian. Silakan chat jika ada yang dapat dibantu.">
 		</div>
 
 		<script src="assets/js/jquery.min.js"></script>
